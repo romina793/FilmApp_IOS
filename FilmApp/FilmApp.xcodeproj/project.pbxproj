@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,6 +25,11 @@
 		4971609A241BFA8C0076CC83 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 49716093241BFA5D0076CC83 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4971609B241BFA8C0076CC83 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4971608F241BFA5D0076CC83 /* Alamofire.framework */; };
 		4971609C241BFA8C0076CC83 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4971608F241BFA5D0076CC83 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		497160AF241C078B0076CC83 /* CellFilm.xib in Resources */ = {isa = PBXBuildFile; fileRef = 497160AE241C078B0076CC83 /* CellFilm.xib */; };
+		497160B1241C07F70076CC83 /* CellFilm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497160B0241C07F70076CC83 /* CellFilm.swift */; };
+		497160B3241C0B640076CC83 /* FilmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497160B2241C0B640076CC83 /* FilmModel.swift */; };
+		497160B5241C0B740076CC83 /* FilmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497160B4241C0B740076CC83 /* FilmService.swift */; };
+		497160B7241C0B9E0076CC83 /* FilmServiceContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497160B6241C0B9E0076CC83 /* FilmServiceContract.swift */; };
 		886F3FA5E5E30991A98892BD /* Pods_FilmApp_FilmAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B2FA995CA008D73D630B26 /* Pods_FilmApp_FilmAppUITests.framework */; };
 		EAEB0A9C31744267CAA11792 /* Pods_FilmApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23242FD83454634E20E539E6 /* Pods_FilmApp.framework */; };
 /* End PBXBuildFile section */
@@ -132,6 +137,11 @@
 		4971606E241BF6110076CC83 /* FilmAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmAppUITests.swift; sourceTree = "<group>"; };
 		49716070241BF6110076CC83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4971607C241BFA5D0076CC83 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		497160AE241C078B0076CC83 /* CellFilm.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellFilm.xib; sourceTree = "<group>"; };
+		497160B0241C07F70076CC83 /* CellFilm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellFilm.swift; sourceTree = "<group>"; };
+		497160B2241C0B640076CC83 /* FilmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmModel.swift; sourceTree = "<group>"; };
+		497160B4241C0B740076CC83 /* FilmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmService.swift; sourceTree = "<group>"; };
+		497160B6241C0B9E0076CC83 /* FilmServiceContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmServiceContract.swift; sourceTree = "<group>"; };
 		851463C84F194292D81CCA14 /* Pods-FilmAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmAppTests.debug.xcconfig"; path = "Target Support Files/Pods-FilmAppTests/Pods-FilmAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		89884DFE71366BC25B87518F /* Pods_FilmAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FilmAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75A5E37500E42B8A693B756 /* Pods-FilmApp-FilmAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmApp-FilmAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-FilmApp-FilmAppUITests/Pods-FilmApp-FilmAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -197,12 +207,13 @@
 		49716048241BF6100076CC83 /* FilmApp */ = {
 			isa = PBXGroup;
 			children = (
+				497160AA241C07480076CC83 /* Model */,
+				497160AC241C07540076CC83 /* ViewModel */,
+				497160AB241C074E0076CC83 /* View */,
 				49716049241BF6100076CC83 /* AppDelegate.swift */,
-				4971604B241BF6100076CC83 /* SceneDelegate.swift */,
-				4971604D241BF6100076CC83 /* ViewController.swift */,
-				4971604F241BF6100076CC83 /* Main.storyboard */,
-				49716055241BF6110076CC83 /* Assets.xcassets */,
 				49716057241BF6110076CC83 /* LaunchScreen.storyboard */,
+				4971604B241BF6100076CC83 /* SceneDelegate.swift */,
+				49716055241BF6110076CC83 /* Assets.xcassets */,
 				4971605A241BF6110076CC83 /* Info.plist */,
 				49716052241BF6100076CC83 /* FilmApp.xcdatamodeld */,
 				4971607C241BFA5D0076CC83 /* Alamofire.xcodeproj */,
@@ -252,6 +263,42 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		497160AA241C07480076CC83 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				497160AD241C075F0076CC83 /* Service */,
+				497160B2241C0B640076CC83 /* FilmModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		497160AB241C074E0076CC83 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4971604F241BF6100076CC83 /* Main.storyboard */,
+				4971604D241BF6100076CC83 /* ViewController.swift */,
+				497160AE241C078B0076CC83 /* CellFilm.xib */,
+				497160B0241C07F70076CC83 /* CellFilm.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		497160AC241C07540076CC83 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		497160AD241C075F0076CC83 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				497160B4241C0B740076CC83 /* FilmService.swift */,
+				497160B6241C0B9E0076CC83 /* FilmServiceContract.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		A5AA57F47317BC3CD2902BEF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,7 +309,6 @@
 				851463C84F194292D81CCA14 /* Pods-FilmAppTests.debug.xcconfig */,
 				C898D01636C177A397C10000 /* Pods-FilmAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -436,6 +482,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49716059241BF6110076CC83 /* LaunchScreen.storyboard in Resources */,
+				497160AF241C078B0076CC83 /* CellFilm.xib in Resources */,
 				49716056241BF6110076CC83 /* Assets.xcassets in Resources */,
 				49716051241BF6100076CC83 /* Main.storyboard in Resources */,
 			);
@@ -583,8 +630,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4971604E241BF6100076CC83 /* ViewController.swift in Sources */,
+				497160B3241C0B640076CC83 /* FilmModel.swift in Sources */,
 				49716054241BF6100076CC83 /* FilmApp.xcdatamodeld in Sources */,
+				497160B7241C0B9E0076CC83 /* FilmServiceContract.swift in Sources */,
 				4971604A241BF6100076CC83 /* AppDelegate.swift in Sources */,
+				497160B5241C0B740076CC83 /* FilmService.swift in Sources */,
+				497160B1241C07F70076CC83 /* CellFilm.swift in Sources */,
 				4971604C241BF6100076CC83 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -758,7 +809,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 263824AD8AE0EEC7E7F8EC86 /* Pods-FilmApp.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FilmApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -776,7 +826,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F2DB468B2DE8A38B0B8800CA /* Pods-FilmApp.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FilmApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
