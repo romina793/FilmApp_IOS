@@ -1,0 +1,29 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AlamofireImage (3.6.0):
+    - Alamofire (~> 4.9)
+  - SwiftyJSON (4.3.0)
+  - UIImageColors (2.1.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - AlamofireImage (~> 3.4)
+  - SwiftyJSON (~> 4.0)
+  - UIImageColors
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - SwiftyJSON
+    - UIImageColors
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+  UIImageColors: d2ef3b0877d203cbb06489eeb78ea8b7788caabe
+
+PODFILE CHECKSUM: 35c615ac82712fcef54cb29a636e623598375261
+
+COCOAPODS: 1.9.1
