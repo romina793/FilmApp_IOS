@@ -1,0 +1,3 @@
+[submodule "FilmApp/FilmApp/Alamofire"]
+	path = FilmApp/FilmApp/Alamofire
+	url = https://github.com/Alamofire/Alamofire.git
