@@ -30,6 +30,25 @@
 		497160B3241C0B640076CC83 /* FilmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497160B2241C0B640076CC83 /* FilmModel.swift */; };
 		497160B5241C0B740076CC83 /* FilmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497160B4241C0B740076CC83 /* FilmService.swift */; };
 		497160B7241C0B9E0076CC83 /* FilmServiceContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497160B6241C0B9E0076CC83 /* FilmServiceContract.swift */; };
+		497160B9241C0C680076CC83 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497160B8241C0C680076CC83 /* DetailViewController.swift */; };
+		497160BB241C0C9D0076CC83 /* FilmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497160BA241C0C9D0076CC83 /* FilmViewModel.swift */; };
+		497160BD241C0CBC0076CC83 /* FilmViewModelContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497160BC241C0CBC0076CC83 /* FilmViewModelContract.swift */; };
+		497160BF241C0CD10076CC83 /* FilmDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497160BE241C0CD10076CC83 /* FilmDetailViewModel.swift */; };
+		497160C1241C0CE50076CC83 /* FilmDetailViewModelContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497160C0241C0CE50076CC83 /* FilmDetailViewModelContract.swift */; };
+		497160CE241C1DE70076CC83 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497160C7241C1DE70076CC83 /* Alamofire.framework */; };
+		497160CF241C1DE70076CC83 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 497160C7241C1DE70076CC83 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		497160D0241C1DE70076CC83 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497160C8241C1DE70076CC83 /* AlamofireImage.framework */; };
+		497160D1241C1DE70076CC83 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 497160C8241C1DE70076CC83 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		497160D2241C1DE70076CC83 /* Pods_FilmApp_FilmAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497160C9241C1DE70076CC83 /* Pods_FilmApp_FilmAppUITests.framework */; };
+		497160D3241C1DE70076CC83 /* Pods_FilmApp_FilmAppUITests.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 497160C9241C1DE70076CC83 /* Pods_FilmApp_FilmAppUITests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		497160D4241C1DE70076CC83 /* Pods_FilmApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497160CA241C1DE70076CC83 /* Pods_FilmApp.framework */; };
+		497160D5241C1DE70076CC83 /* Pods_FilmApp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 497160CA241C1DE70076CC83 /* Pods_FilmApp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		497160D6241C1DE70076CC83 /* Pods_FilmAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497160CB241C1DE70076CC83 /* Pods_FilmAppTests.framework */; };
+		497160D7241C1DE70076CC83 /* Pods_FilmAppTests.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 497160CB241C1DE70076CC83 /* Pods_FilmAppTests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		497160D8241C1DE70076CC83 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497160CC241C1DE70076CC83 /* SwiftyJSON.framework */; };
+		497160D9241C1DE70076CC83 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 497160CC241C1DE70076CC83 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		497160DA241C1DE70076CC83 /* UIImageColors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497160CD241C1DE70076CC83 /* UIImageColors.framework */; };
+		497160DB241C1DE70076CC83 /* UIImageColors.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 497160CD241C1DE70076CC83 /* UIImageColors.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		886F3FA5E5E30991A98892BD /* Pods_FilmApp_FilmAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B2FA995CA008D73D630B26 /* Pods_FilmApp_FilmAppUITests.framework */; };
 		EAEB0A9C31744267CAA11792 /* Pods_FilmApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23242FD83454634E20E539E6 /* Pods_FilmApp.framework */; };
 /* End PBXBuildFile section */
@@ -107,9 +126,16 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				497160D5241C1DE70076CC83 /* Pods_FilmApp.framework in Embed Frameworks */,
 				49716096241BFA8C0076CC83 /* Alamofire.framework in Embed Frameworks */,
+				497160D3241C1DE70076CC83 /* Pods_FilmApp_FilmAppUITests.framework in Embed Frameworks */,
 				4971609A241BFA8C0076CC83 /* Alamofire.framework in Embed Frameworks */,
+				497160D9241C1DE70076CC83 /* SwiftyJSON.framework in Embed Frameworks */,
+				497160D7241C1DE70076CC83 /* Pods_FilmAppTests.framework in Embed Frameworks */,
+				497160DB241C1DE70076CC83 /* UIImageColors.framework in Embed Frameworks */,
 				49716098241BFA8C0076CC83 /* Alamofire.framework in Embed Frameworks */,
+				497160D1241C1DE70076CC83 /* AlamofireImage.framework in Embed Frameworks */,
+				497160CF241C1DE70076CC83 /* Alamofire.framework in Embed Frameworks */,
 				4971609C241BFA8C0076CC83 /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -142,6 +168,18 @@
 		497160B2241C0B640076CC83 /* FilmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmModel.swift; sourceTree = "<group>"; };
 		497160B4241C0B740076CC83 /* FilmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmService.swift; sourceTree = "<group>"; };
 		497160B6241C0B9E0076CC83 /* FilmServiceContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmServiceContract.swift; sourceTree = "<group>"; };
+		497160B8241C0C680076CC83 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		497160BA241C0C9D0076CC83 /* FilmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmViewModel.swift; sourceTree = "<group>"; };
+		497160BC241C0CBC0076CC83 /* FilmViewModelContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmViewModelContract.swift; sourceTree = "<group>"; };
+		497160BE241C0CD10076CC83 /* FilmDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailViewModel.swift; sourceTree = "<group>"; };
+		497160C0241C0CE50076CC83 /* FilmDetailViewModelContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailViewModelContract.swift; sourceTree = "<group>"; };
+		497160C7241C1DE70076CC83 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		497160C8241C1DE70076CC83 /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		497160C9241C1DE70076CC83 /* Pods_FilmApp_FilmAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_FilmApp_FilmAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		497160CA241C1DE70076CC83 /* Pods_FilmApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_FilmApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		497160CB241C1DE70076CC83 /* Pods_FilmAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_FilmAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		497160CC241C1DE70076CC83 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		497160CD241C1DE70076CC83 /* UIImageColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIImageColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		851463C84F194292D81CCA14 /* Pods-FilmAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmAppTests.debug.xcconfig"; path = "Target Support Files/Pods-FilmAppTests/Pods-FilmAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		89884DFE71366BC25B87518F /* Pods_FilmAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FilmAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75A5E37500E42B8A693B756 /* Pods-FilmApp-FilmAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmApp-FilmAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-FilmApp-FilmAppUITests/Pods-FilmApp-FilmAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -155,10 +193,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				497160D2241C1DE70076CC83 /* Pods_FilmApp_FilmAppUITests.framework in Frameworks */,
 				49716095241BFA8C0076CC83 /* Alamofire.framework in Frameworks */,
+				497160CE241C1DE70076CC83 /* Alamofire.framework in Frameworks */,
+				497160D4241C1DE70076CC83 /* Pods_FilmApp.framework in Frameworks */,
+				497160D0241C1DE70076CC83 /* AlamofireImage.framework in Frameworks */,
 				49716099241BFA8C0076CC83 /* Alamofire.framework in Frameworks */,
+				497160D8241C1DE70076CC83 /* SwiftyJSON.framework in Frameworks */,
+				497160D6241C1DE70076CC83 /* Pods_FilmAppTests.framework in Frameworks */,
 				49716097241BFA8C0076CC83 /* Alamofire.framework in Frameworks */,
 				4971609B241BFA8C0076CC83 /* Alamofire.framework in Frameworks */,
+				497160DA241C1DE70076CC83 /* UIImageColors.framework in Frameworks */,
 				EAEB0A9C31744267CAA11792 /* Pods_FilmApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +301,13 @@
 		49716094241BFA8C0076CC83 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				497160C7241C1DE70076CC83 /* Alamofire.framework */,
+				497160C8241C1DE70076CC83 /* AlamofireImage.framework */,
+				497160C9241C1DE70076CC83 /* Pods_FilmApp_FilmAppUITests.framework */,
+				497160CA241C1DE70076CC83 /* Pods_FilmApp.framework */,
+				497160CB241C1DE70076CC83 /* Pods_FilmAppTests.framework */,
+				497160CC241C1DE70076CC83 /* SwiftyJSON.framework */,
+				497160CD241C1DE70076CC83 /* UIImageColors.framework */,
 				23242FD83454634E20E539E6 /* Pods_FilmApp.framework */,
 				28B2FA995CA008D73D630B26 /* Pods_FilmApp_FilmAppUITests.framework */,
 				89884DFE71366BC25B87518F /* Pods_FilmAppTests.framework */,
@@ -279,6 +331,7 @@
 				4971604D241BF6100076CC83 /* ViewController.swift */,
 				497160AE241C078B0076CC83 /* CellFilm.xib */,
 				497160B0241C07F70076CC83 /* CellFilm.swift */,
+				497160B8241C0C680076CC83 /* DetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -286,6 +339,10 @@
 		497160AC241C07540076CC83 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				497160BA241C0C9D0076CC83 /* FilmViewModel.swift */,
+				497160BC241C0CBC0076CC83 /* FilmViewModelContract.swift */,
+				497160BE241C0CD10076CC83 /* FilmDetailViewModel.swift */,
+				497160C0241C0CE50076CC83 /* FilmDetailViewModelContract.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -629,14 +686,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				497160B9241C0C680076CC83 /* DetailViewController.swift in Sources */,
 				4971604E241BF6100076CC83 /* ViewController.swift in Sources */,
+				497160BB241C0C9D0076CC83 /* FilmViewModel.swift in Sources */,
 				497160B3241C0B640076CC83 /* FilmModel.swift in Sources */,
 				49716054241BF6100076CC83 /* FilmApp.xcdatamodeld in Sources */,
 				497160B7241C0B9E0076CC83 /* FilmServiceContract.swift in Sources */,
 				4971604A241BF6100076CC83 /* AppDelegate.swift in Sources */,
+				497160C1241C0CE50076CC83 /* FilmDetailViewModelContract.swift in Sources */,
 				497160B5241C0B740076CC83 /* FilmService.swift in Sources */,
 				497160B1241C07F70076CC83 /* CellFilm.swift in Sources */,
+				497160BD241C0CBC0076CC83 /* FilmViewModelContract.swift in Sources */,
 				4971604C241BF6100076CC83 /* SceneDelegate.swift in Sources */,
+				497160BF241C0CD10076CC83 /* FilmDetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

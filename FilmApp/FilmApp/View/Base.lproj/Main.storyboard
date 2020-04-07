@@ -37,10 +37,10 @@
             </objects>
             <point key="canvasLocation" x="132" y="118"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="kXb-fJ-6fq">
             <objects>
-                <viewController id="Hgi-N1-bhE" sceneMemberID="viewController">
+                <viewController id="Hgi-N1-bhE" customClass="DetailViewController" customModule="FilmApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1SS-NQ-6hA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
